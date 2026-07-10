@@ -1,4 +1,5 @@
-# Stratascratch<h1 align="center">🐘 SQL Practice — StrataScratch</h1>
+# Stratascratch
+<h1 align="center">🐘 SQL Practice — StrataScratch</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
