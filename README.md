@@ -1,0 +1,45 @@
+# stratascratch
+<h1 align="center">🐘 SQL Practice — StrataScratch</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solved-1-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streak-Day%201-orange?style=for-the-badge" />
+</p>
+
+<p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
+
+---
+
+### 📌 Why this repo exists
+
+I'm building SQL fluency through consistent, deliberate practice. Every solution here captures not just *what* I wrote, but *why* — which approach I chose, what alternatives existed, and what I'd improve now.
+
+### 🗂️ Structure
+
+```
+solutions/   → one .sql file per problem, fully commented
+notes/       → concepts and patterns learned along the way
+```
+
+### 🏷️ Topics Covered
+
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT`
+
+### ✅ Progress
+
+| # | Question | Key Concept(s) | Solution |
+|---|----------|-----------------|----------|
+| 10087 | Find All Posts With Heart Reaction | Subquery, `IN`, cross-table filtering | [solutions/10087.sql](solutions/10087.sql) |
+
+### 🧠 Concepts Learned
+
+Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
+
+**So far:**
+- Subquery (`IN` / `EXISTS`) vs `JOIN` for filtering across related tables
+- Avoiding duplicate rows from one-to-many joins with `DISTINCT`
+
+---
+
+<p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
