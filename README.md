@@ -1,5 +1,4 @@
-# Stratascratch
-<h1 align="center">🐘 SQL Practice — StrataScratch</h1>
+# Stratascratch<h1 align="center">🐘 SQL Practice — StrataScratch</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
@@ -30,7 +29,7 @@ notes/       → concepts and patterns learned along the way
 
 | # | Question | Key Concept(s) | Solution |
 |---|----------|-----------------|----------|
-| 10087 | Find All Posts With Heart Reaction | Subquery, `IN`, cross-table filtering | [solutions/10087.sql](solutions/10087.sql) |
+| 10087 | [Find All Posts Which Were Reacted To With A Heart](https://platform.stratascratch.com/coding/10087-find-all-posts-which-were-reacted-to-with-a-heart?code_type=1) | Subquery, `IN`, cross-table filtering | [solutions/10087.sql](solutions/10087.sql) |
 
 ### 🧠 Concepts Learned
 
