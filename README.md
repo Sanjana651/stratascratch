@@ -1,4 +1,4 @@
-# stratascratch
+# Stratascratch
 <h1 align="center">🐘 SQL Practice — StrataScratch</h1>
 
 <p align="center">
