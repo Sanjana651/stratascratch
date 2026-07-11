@@ -40,6 +40,8 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 **So far:**
 - Subquery (`IN` / `EXISTS`) vs `JOIN` for filtering across related tables
 - Avoiding duplicate rows from one-to-many joins with `DISTINCT`
+- `GROUP BY` + `MAX()` vs `DISTINCT ON` for picking one row per group
+- Positional `GROUP BY` / `ORDER BY` (referencing column position instead of name)
 
 ---
 
