@@ -16,3 +16,8 @@
 - GROUP BY should only reference the columns that define what a "bucket" is (e.g., customer id, name) — not the aggregate function itself.
 - SUM() calculates a total per group, evaluated after GROUP BY clusters the rows.
 - Positional ORDER BY/GROUP BY must match the actual number and order of columns in the SELECT list — mismatches cause errors.
+
+## Day 4 — Derived tables and scoping aggregates correctly
+- DISTINCT ON can be used as a subquery inside FROM (a "derived table") to collapse a multi-row-per-entity table down to one row per entity *before* joining it elsewhere.
+- An inner JOIN automatically filters out rows with no match on the other side - it can replace a separate WHERE...IN existence check in some cases.
+- When a condition like "among X who satisfy Y" appears in a problem, any aggregate (MAX, MIN, etc.) computed as part of that condition must be scoped to the *same* filtered subset - not computed over the whole unfiltered table. Otherwise the aggregate can reflect a value from an excluded row, silently breaking the match.
