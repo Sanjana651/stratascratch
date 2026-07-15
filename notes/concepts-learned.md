@@ -27,3 +27,8 @@
 - Window functions (AGGREGATE(...) OVER (PARTITION BY column)) calculate an aggregate per group WITHOUT collapsing rows - every original row survives, with the aggregate attached as an extra column.
 - PARTITION BY defines the "window" (group) the calculation applies to, analogous to GROUP BY's grouping key, but without merging output rows.
 - Use case signal: "output X for each row, along with a group-level aggregate alongside it" -> window function, not GROUP BY.
+
+## Day 6 — IN with literal values, aggregate with no GROUP BY
+- IN works with a fixed list of literal values, not just a subquery - shorthand for multiple OR conditions on the same column.
+- SUM() (or any aggregate) with no GROUP BY collapses ALL matching rows into a single combined value - useful when a problem wants one total, not a per-group breakdown.
+- When a problem's wording is ambiguous about "total" vs "totals per X", check the expected output's row count/shape to confirm which is meant.
