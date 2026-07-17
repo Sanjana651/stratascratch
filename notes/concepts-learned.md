@@ -32,3 +32,8 @@
 - IN works with a fixed list of literal values, not just a subquery - shorthand for multiple OR conditions on the same column.
 - SUM() (or any aggregate) with no GROUP BY collapses ALL matching rows into a single combined value - useful when a problem wants one total, not a per-group breakdown.
 - When a problem's wording is ambiguous about "total" vs "totals per X", check the expected output's row count/shape to confirm which is meant.
+
+## Day 7 — Handling NULL values correctly
+- IS NULL / IS NOT NULL is the required syntax for checking missing values -
+  = NULL or != NULL do not work due to SQL's three-valued logic (NULL means "unknown," not a value that can be equality-compared).
+- Combined with AND to require multiple conditions simultaneously, and DISTINCT to deduplicate the final output - both concepts reused correctly from earlier days without needing them re-explained.
