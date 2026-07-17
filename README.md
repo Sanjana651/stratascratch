@@ -3,8 +3,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-6-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streak-Day%206-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-7-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streak-Day%207-orange?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -24,7 +24,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL`
 
 ### ✅ Progress
 
@@ -36,6 +36,7 @@ notes/       → concepts and patterns learned along the way
 | 10353 | [Workers With The Highest Salaries](https://platform.stratascratch.com/coding/10353-workers-with-the-highest-salaries?code_type=1) | `DISTINCT ON` as derived table, `JOIN`, scoped aggregate subquery | [solutions/10353.sql](solutions/10353.sql) |
 | 9917 | [Average Salaries](https://platform.stratascratch.com/coding/9917-average-salaries?code_type=1) | Window function, `OVER (PARTITION BY)` | [solutions/9917.sql](solutions/9917.sql) |
 | 10127 | [Calculate Samantha's and Lisa's total sales revenue](https://platform.stratascratch.com/coding/10127-calculate-samanthas-and-lisas-total-sales-revenue?code_type=1) | `IN` with literal values, `SUM()` with no `GROUP BY` | [solutions/10127.sql](solutions/10127.sql) |
+| 10024 | [Find wine varieties tasted by 'Roger Voss' with a value in region_1](https://platform.stratascratch.com/coding/10024-find-wine-varieties-tasted-by-roger-voss-and-with-a-value-in-the-region-1-column-of-the-dataset?code_type=1) | `IS NOT NULL`, `AND`, `DISTINCT` | [solutions/10024.sql](solutions/10024.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -52,6 +53,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - Window functions (AVG() OVER (PARTITION BY ...)) to attach group-level aggregates without collapsing rows
 - IN with a fixed list of literal values (shorthand for multiple OR conditions)
 - SUM() with no GROUP BY to collapse all matching rows into one combined total
+- IS NULL / IS NOT NULL for correctly checking missing values (not = NULL)
 
 ---
 
