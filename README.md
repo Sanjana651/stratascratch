@@ -3,8 +3,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-7-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streak-Day%207-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-8-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streak-Day%208-orange?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -37,6 +37,7 @@ notes/       → concepts and patterns learned along the way
 | 9917 | [Average Salaries](https://platform.stratascratch.com/coding/9917-average-salaries?code_type=1) | Window function, `OVER (PARTITION BY)` | [solutions/9917.sql](solutions/9917.sql) |
 | 10127 | [Calculate Samantha's and Lisa's total sales revenue](https://platform.stratascratch.com/coding/10127-calculate-samanthas-and-lisas-total-sales-revenue?code_type=1) | `IN` with literal values, `SUM()` with no `GROUP BY` | [solutions/10127.sql](solutions/10127.sql) |
 | 10024 | [Find wine varieties tasted by 'Roger Voss' with a value in region_1](https://platform.stratascratch.com/coding/10024-find-wine-varieties-tasted-by-roger-voss-and-with-a-value-in-the-region-1-column-of-the-dataset?code_type=1) | `IS NOT NULL`, `AND`, `DISTINCT` | [solutions/10024.sql](solutions/10024.sql) |
+| 10005 | [Hour Of Highest Gas Expense](https://platform.stratascratch.com/coding/10005-hour-of-highest-gas-expense?code_type=1) | `MAX()` subquery pattern | [solutions/10005.sql](solutions/10005.sql) |
 
 ### 🧠 Concepts Learned
 
