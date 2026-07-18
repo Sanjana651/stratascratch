@@ -37,3 +37,7 @@
 - IS NULL / IS NOT NULL is the required syntax for checking missing values -
   = NULL or != NULL do not work due to SQL's three-valued logic (NULL means "unknown," not a value that can be equality-compared).
 - Combined with AND to require multiple conditions simultaneously, and DISTINCT to deduplicate the final output - both concepts reused correctly from earlier days without needing them re-explained.
+
+## Day 8 — Reusing the MAX() subquery pattern
+- Same pattern as Day 4: WHERE column = (SELECT MAX(column) FROM table) finds the row(s) matching the maximum value, then any other column from that row can be selected.
+- Whether this returns one row or multiple (ties) depends on the data, not the query - the query logic stays the same either way.
