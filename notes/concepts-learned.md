@@ -46,3 +46,7 @@
 - No new SQL concept - reinforced WHERE + AND from earlier days.
 - Key habit: always check SELECT DISTINCT on a text column being filtered, to confirm the exact stored value/casing before trusting a WHERE clause - a mismatch produces zero rows silently, with no error to flag it.
 - Boundary conditions ("before noon") need care: hour < 12, not <= 12.
+
+## Day 10 — OR vs AND
+- "Either...or" in English almost always maps to SQL's OR, not AND.
+- Test: can a single row ever satisfy both conditions at the same time on the same column? If no, OR is needed (impossible with AND - always zero rows). If yes, AND may be correct (e.g. Day 7's taster_name + region_1 check, which are on different columns and can both be true together).
