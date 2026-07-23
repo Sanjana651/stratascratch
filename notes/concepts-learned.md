@@ -41,3 +41,8 @@
 ## Day 8 — Reusing the MAX() subquery pattern
 - Same pattern as Day 4: WHERE column = (SELECT MAX(column) FROM table) finds the row(s) matching the maximum value, then any other column from that row can be selected.
 - Whether this returns one row or multiple (ties) depends on the data, not the query - the query logic stays the same either way.
+
+## Day 9 — Verifying assumptions before filtering
+- No new SQL concept - reinforced WHERE + AND from earlier days.
+- Key habit: always check SELECT DISTINCT on a text column being filtered, to confirm the exact stored value/casing before trusting a WHERE clause - a mismatch produces zero rows silently, with no error to flag it.
+- Boundary conditions ("before noon") need care: hour < 12, not <= 12.
