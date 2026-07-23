@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR`
 
 ### ✅ Progress
 
@@ -38,6 +38,7 @@ notes/       → concepts and patterns learned along the way
 | 10024 | [Find wine varieties tasted by 'Roger Voss' with a value in region_1](https://platform.stratascratch.com/coding/10024-find-wine-varieties-tasted-by-roger-voss-and-with-a-value-in-the-region-1-column-of-the-dataset?code_type=1) | `IS NOT NULL`, `AND`, `DISTINCT` | [solutions/10024.sql](solutions/10024.sql) |
 | 10005 | [Hour Of Highest Gas Expense](https://platform.stratascratch.com/coding/10005-hour-of-highest-gas-expense?code_type=1) | `MAX()` subquery pattern | [solutions/10005.sql](solutions/10005.sql) |
 | 10004 | [Find all Lyft rides which happened on rainy days before noon](https://platform.stratascratch.com/coding/10004-find-all-lyft-rides-which-happened-on-rainy-days-before-noon?code_type=1) | `WHERE` + `AND`, verifying exact text values | [solutions/10004.sql](solutions/10004.sql) |
+| 10003 | [Lyft Driver Wages](https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=1) | `OR` vs `AND` | [solutions/10003.sql](solutions/10003.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -55,7 +56,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - IN with a fixed list of literal values (shorthand for multiple OR conditions)
 - SUM() with no GROUP BY to collapse all matching rows into one combined total
 - IS NULL / IS NOT NULL for correctly checking missing values (not = NULL)
-
+- OR vs AND: "either...or" maps to OR; AND on the same column with mutually exclusive ranges is always false
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
