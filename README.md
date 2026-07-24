@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-10-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-11-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT`
 
 ### ✅ Progress
 
@@ -39,6 +39,7 @@ notes/       → concepts and patterns learned along the way
 | 10005 | [Hour Of Highest Gas Expense](https://platform.stratascratch.com/coding/10005-hour-of-highest-gas-expense?code_type=1) | `MAX()` subquery pattern | [solutions/10005.sql](solutions/10005.sql) |
 | 10004 | [Find all Lyft rides which happened on rainy days before noon](https://platform.stratascratch.com/coding/10004-find-all-lyft-rides-which-happened-on-rainy-days-before-noon?code_type=1) | `WHERE` + `AND`, verifying exact text values | [solutions/10004.sql](solutions/10004.sql) |
 | 10003 | [Lyft Driver Wages](https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=1) | `OR` vs `AND` | [solutions/10003.sql](solutions/10003.sql) |
+| 9992 | [Artist Appearance Count](https://platform.stratascratch.com/coding/9992-artist-appearance-count?code_type=1) | `COUNT()`, `GROUP BY`, positional `ORDER BY` | [solutions/9992.sql](solutions/9992.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -57,6 +58,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - SUM() with no GROUP BY to collapse all matching rows into one combined total
 - IS NULL / IS NOT NULL for correctly checking missing values (not = NULL)
 - OR vs AND: "either...or" maps to OR; AND on the same column with mutually exclusive ranges is always false
+- COUNT() for counting rows per group; GROUP BY resolves the ambiguity of mixing raw columns with aggregates in the same SELECT
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
