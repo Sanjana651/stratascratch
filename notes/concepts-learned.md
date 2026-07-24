@@ -55,3 +55,8 @@
 - COUNT(column) counts non-NULL rows per group; COUNT(*) counts all rows per group. When grouping by a column that's always non-null (like the grouping key itself), both give identical results - COUNT(*) is the more conventional default otherwise.
 - GROUP BY isn't just a syntax rule - it resolves a genuine ambiguity. Without it, selecting a raw column (artist) alongside an aggregate (COUNT(artist)) asks for both "one value per row" and "one summary value for the whole table" simultaneously, which SQL can't reconcile - hence the error. GROUP BY fixes this by redefining what "one row" means: one bucket per distinct grouping-key value.
 - Positional ORDER BY must reference the column actually being sorted by, not just habitually the first position.
+
+## Day 12 — WHERE filters before GROUP BY/aggregation
+- Same COUNT + GROUP BY + ORDER BY DESC structure as Day 11, with a WHERE clause added to restrict which rows get counted in the first place.
+- Query processing order: FROM -> WHERE -> GROUP BY -> SELECT (aggregates calculated per group) -> ORDER BY. WHERE always operates on raw, ungrouped rows, before any bucketing happens.
+- Three separate composable jobs: WHERE narrows which rows count, GROUP BY decides how they're bucketed, the aggregate function calculates within each bucket.
