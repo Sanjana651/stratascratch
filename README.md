@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-11-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-12-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -40,6 +40,7 @@ notes/       → concepts and patterns learned along the way
 | 10004 | [Find all Lyft rides which happened on rainy days before noon](https://platform.stratascratch.com/coding/10004-find-all-lyft-rides-which-happened-on-rainy-days-before-noon?code_type=1) | `WHERE` + `AND`, verifying exact text values | [solutions/10004.sql](solutions/10004.sql) |
 | 10003 | [Lyft Driver Wages](https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=1) | `OR` vs `AND` | [solutions/10003.sql](solutions/10003.sql) |
 | 9992 | [Artist Appearance Count](https://platform.stratascratch.com/coding/9992-artist-appearance-count?code_type=1) | `COUNT()`, `GROUP BY`, positional `ORDER BY` | [solutions/9992.sql](solutions/9992.sql) |
+| 9991 | [Top Ranked Songs](https://platform.stratascratch.com/coding/9991-top-ranked-songs?code_type=1) | `WHERE` + `GROUP BY` + `COUNT()` | [solutions/9991.sql](solutions/9991.sql) |
 
 ### 🧠 Concepts Learned
 
