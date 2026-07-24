@@ -50,3 +50,8 @@
 ## Day 10 — OR vs AND
 - "Either...or" in English almost always maps to SQL's OR, not AND.
 - Test: can a single row ever satisfy both conditions at the same time on the same column? If no, OR is needed (impossible with AND - always zero rows). If yes, AND may be correct (e.g. Day 7's taster_name + region_1 check, which are on different columns and can both be true together).
+
+## Day 11 — COUNT() and why GROUP BY is required, not just conventional
+- COUNT(column) counts non-NULL rows per group; COUNT(*) counts all rows per group. When grouping by a column that's always non-null (like the grouping key itself), both give identical results - COUNT(*) is the more conventional default otherwise.
+- GROUP BY isn't just a syntax rule - it resolves a genuine ambiguity. Without it, selecting a raw column (artist) alongside an aggregate (COUNT(artist)) asks for both "one value per row" and "one summary value for the whole table" simultaneously, which SQL can't reconcile - hence the error. GROUP BY fixes this by redefining what "one row" means: one bucket per distinct grouping-key value.
+- Positional ORDER BY must reference the column actually being sorted by, not just habitually the first position.
