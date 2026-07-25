@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-13-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-14-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence`
 
 ### ✅ Progress
 
@@ -42,6 +42,7 @@ notes/       → concepts and patterns learned along the way
 | 9992 | [Artist Appearance Count](https://platform.stratascratch.com/coding/9992-artist-appearance-count?code_type=1) | `COUNT()`, `GROUP BY`, positional `ORDER BY` | [solutions/9992.sql](solutions/9992.sql) |
 | 9991 | [Top Ranked Songs](https://platform.stratascratch.com/coding/9991-top-ranked-songs?code_type=1) | `WHERE` + `GROUP BY` + `COUNT()` | [solutions/9991.sql](solutions/9991.sql) |
 | 9943 | [Olympics Events List By Age](https://platform.stratascratch.com/coding/9943-olympics-events-list-by-age?code_type=1) | `MIN`, `AVG`, `MAX` in one query | [solutions/9943.sql](solutions/9943.sql) |
+| 9937 | [Find all athletes who were older than 40 years when they won either Bronze or Silver medals](https://platform.stratascratch.com/coding/9937-find-all-athletes-who-were-older-than-40-years-when-they-won-either-bronze-or-silver-medals?code_type=1) | `AND`/`OR` precedence, parentheses, `IN` | [solutions/9937.sql](solutions/9937.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -62,6 +63,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - OR vs AND: "either...or" maps to OR; AND on the same column with mutually exclusive ranges is always false
 - COUNT() for counting rows per group; GROUP BY resolves the ambiguity of mixing raw columns with aggregates in the same SELECT
 - Multiple aggregates (MIN/AVG/MAX) side by side in one SELECT, all calculated over the same row set
+- AND/OR operator precedence: AND binds tighter than OR - always parenthesize explicitly when mixing them
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
