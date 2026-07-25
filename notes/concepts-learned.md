@@ -65,3 +65,8 @@
 - Multiple aggregate functions (MIN, AVG, MAX, etc.) can be listed side by side in the same SELECT - each is calculated independently over the same rows, all producing one combined output row.
 - Reinforces Day 6: no GROUP BY means the aggregate(s) apply across the entire table, not per-group.
 - A hint saying "don't worry about duplicates/edge cases" often just means no extra DISTINCT/dedup logic is needed - every row counts as-is.
+
+## Day 14 — Operator precedence: AND vs OR
+- AND binds tighter than OR in SQL (same as in math/most languages). "A AND B OR C" is evaluated as "(A AND B) OR C", NOT "A AND (B OR C)" - these can have very different meanings.
+- Always use explicit parentheses when mixing AND and OR in the same WHERE clause, to force the grouping actually intended. No error is raised for the "wrong" grouping - it's syntactically valid either way, just logically different.
+- IN (...) can replace multiple "column = X OR column = Y" conditions, same as Day 6, and avoids this precedence trap entirely for that part.
