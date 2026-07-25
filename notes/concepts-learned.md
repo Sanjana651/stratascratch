@@ -60,3 +60,8 @@
 - Same COUNT + GROUP BY + ORDER BY DESC structure as Day 11, with a WHERE clause added to restrict which rows get counted in the first place.
 - Query processing order: FROM -> WHERE -> GROUP BY -> SELECT (aggregates calculated per group) -> ORDER BY. WHERE always operates on raw, ungrouped rows, before any bucketing happens.
 - Three separate composable jobs: WHERE narrows which rows count, GROUP BY decides how they're bucketed, the aggregate function calculates within each bucket.
+
+## Day 13 — Multiple aggregates in one query, no GROUP BY
+- Multiple aggregate functions (MIN, AVG, MAX, etc.) can be listed side by side in the same SELECT - each is calculated independently over the same rows, all producing one combined output row.
+- Reinforces Day 6: no GROUP BY means the aggregate(s) apply across the entire table, not per-group.
+- A hint saying "don't worry about duplicates/edge cases" often just means no extra DISTINCT/dedup logic is needed - every row counts as-is.
