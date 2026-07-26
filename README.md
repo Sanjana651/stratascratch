@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-15-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-16-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING`
 
 ### ✅ Progress
 
@@ -44,6 +44,7 @@ notes/       → concepts and patterns learned along the way
 | 9943 | [Olympics Events List By Age](https://platform.stratascratch.com/coding/9943-olympics-events-list-by-age?code_type=1) | `MIN`, `AVG`, `MAX` in one query | [solutions/9943.sql](solutions/9943.sql) |
 | 9937 | [Find all athletes who were older than 40 years when they won either Bronze or Silver medals](https://platform.stratascratch.com/coding/9937-find-all-athletes-who-were-older-than-40-years-when-they-won-either-bronze-or-silver-medals?code_type=1) | `AND`/`OR` precedence, parentheses, `IN` | [solutions/9937.sql](solutions/9937.sql) |
 | 9913 | [Order Details](https://platform.stratascratch.com/coding/9913-order-details?code_type=1) | `JOIN`, ambiguous column names, `OR` | [solutions/9913.sql](solutions/9913.sql) |
+| 9911 | [Departments With 5 Employees](https://platform.stratascratch.com/coding/9911-departments-with-5-employees?code_type=1) | `HAVING`, `GROUP BY`, `COUNT()` | [solutions/9911.sql](solutions/9911.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -66,6 +67,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - Multiple aggregates (MIN/AVG/MAX) side by side in one SELECT, all calculated over the same row set
 - AND/OR operator precedence: AND binds tighter than OR - always parenthesize explicitly when mixing them
 - Qualifying ambiguous column names (shared between joined tables) with table aliases, anywhere they're referenced
+- HAVING to filter groups by an aggregate value, after GROUP BY (WHERE can't do this - it runs before aggregation exists)
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
