@@ -70,3 +70,8 @@
 - AND binds tighter than OR in SQL (same as in math/most languages). "A AND B OR C" is evaluated as "(A AND B) OR C", NOT "A AND (B OR C)" - these can have very different meanings.
 - Always use explicit parentheses when mixing AND and OR in the same WHERE clause, to force the grouping actually intended. No error is raised for the "wrong" grouping - it's syntactically valid either way, just logically different.
 - IN (...) can replace multiple "column = X OR column = Y" conditions, same as Day 6, and avoids this precedence trap entirely for that part.
+
+## Day 15 — Ambiguous column names after JOIN
+- When two joined tables share a column name (e.g. both have `id`), that name becomes ambiguous anywhere it's referenced after the JOIN - not just in SELECT, but in WHERE, ORDER BY, etc. Must qualify with the table alias (c.id vs o.id) or PostgreSQL raises an ambiguity error.
+- GROUP BY is only needed when aggregating (SUM/COUNT/AVG/etc in SELECT) - joining multiple tables alone doesn't require it.
+- Reinforced: OR (not AND) for "equals one of several values" on the same column - same lesson as Day 10.
