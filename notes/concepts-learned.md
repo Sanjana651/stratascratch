@@ -75,3 +75,10 @@
 - When two joined tables share a column name (e.g. both have `id`), that name becomes ambiguous anywhere it's referenced after the JOIN - not just in SELECT, but in WHERE, ORDER BY, etc. Must qualify with the table alias (c.id vs o.id) or PostgreSQL raises an ambiguity error.
 - GROUP BY is only needed when aggregating (SUM/COUNT/AVG/etc in SELECT) - joining multiple tables alone doesn't require it.
 - Reinforced: OR (not AND) for "equals one of several values" on the same column - same lesson as Day 10.
+
+## Day 16 — HAVING (filtering groups, not rows)
+- WHERE filters raw rows before grouping - cannot reference an aggregate (COUNT/SUM/AVG/etc), since that value isn't calculated yet at that stage.
+- HAVING filters groups AFTER GROUP BY + aggregation - the only clause that can filter based on an aggregate's calculated value.
+- Rule of thumb: aggregate in the filter condition -> HAVING. Plain raw column condition -> WHERE.
+- HAVING can reference an aggregate not present in SELECT at all - it operates on groups, independent of what's displayed.
+- WHERE and HAVING can coexist: WHERE filters rows first, HAVING filters the resulting groups afterward.
