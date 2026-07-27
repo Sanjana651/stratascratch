@@ -82,3 +82,8 @@
 - Rule of thumb: aggregate in the filter condition -> HAVING. Plain raw column condition -> WHERE.
 - HAVING can reference an aggregate not present in SELECT at all - it operates on groups, independent of what's displayed.
 - WHERE and HAVING can coexist: WHERE filters rows first, HAVING filters the resulting groups afterward.
+
+## Day 17 — EXTRACT() for pulling date components
+- EXTRACT(part FROM date_column) pulls a specific component (MONTH, YEAR, DAY, etc.) out of a full date value, ignoring the rest.
+- Useful for "regardless of year, which month/day did this happen in" type conditions - compares the extracted number, not the whole date.
+- Reinforced AND (combining conditions) and COUNT(*) with no GROUP BY (single combined total across all matching rows).
