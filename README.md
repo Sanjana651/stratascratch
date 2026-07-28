@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-17-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-18-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH`
 
 ### ✅ Progress
 
@@ -46,6 +46,7 @@ notes/       → concepts and patterns learned along the way
 | 9913 | [Order Details](https://platform.stratascratch.com/coding/9913-order-details?code_type=1) | `JOIN`, ambiguous column names, `OR` | [solutions/9913.sql](solutions/9913.sql) |
 | 9911 | [Departments With 5 Employees](https://platform.stratascratch.com/coding/9911-departments-with-5-employees?code_type=1) | `HAVING`, `GROUP BY`, `COUNT()` | [solutions/9911.sql](solutions/9911.sql) |
 | 9845 | [April Admin Employees](https://platform.stratascratch.com/coding/9845-april-admin-employees?code_type=1) | `EXTRACT()`, `AND`, `COUNT` | [solutions/9845.sql](solutions/9845.sql) |
+| 9842 | [First Names With Six Letters Ending in 'h'](https://platform.stratascratch.com/coding/9842-first-names-with-six-letters-ending-in-h?code_type=1) | `LIKE`, `%` wildcard, `LENGTH()` | [solutions/9842.sql](solutions/9842.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -70,6 +71,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - Qualifying ambiguous column names (shared between joined tables) with table aliases, anywhere they're referenced
 - HAVING to filter groups by an aggregate value, after GROUP BY (WHERE can't do this - it runs before aggregation exists)
 - EXTRACT(part FROM date) to pull a specific component (month/year/day) from a date column
+- LIKE with % wildcard for pattern matching (starts with / ends with / contains); LENGTH() for character count
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
