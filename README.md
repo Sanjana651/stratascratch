@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-18-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-19-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -47,6 +47,7 @@ notes/       → concepts and patterns learned along the way
 | 9911 | [Departments With 5 Employees](https://platform.stratascratch.com/coding/9911-departments-with-5-employees?code_type=1) | `HAVING`, `GROUP BY`, `COUNT()` | [solutions/9911.sql](solutions/9911.sql) |
 | 9845 | [April Admin Employees](https://platform.stratascratch.com/coding/9845-april-admin-employees?code_type=1) | `EXTRACT()`, `AND`, `COUNT` | [solutions/9845.sql](solutions/9845.sql) |
 | 9842 | [First Names With Six Letters Ending in 'h'](https://platform.stratascratch.com/coding/9842-first-names-with-six-letters-ending-in-h?code_type=1) | `LIKE`, `%` wildcard, `LENGTH()` | [solutions/9842.sql](solutions/9842.sql) |
+| 9805 | [Find drafts which contains the word 'optimism'](https://platform.stratascratch.com/coding/9805-find-drafts-which-contains-the-word-optimism?code_type=1) | `LIKE`, wildcard placement | [solutions/9805.sql](solutions/9805.sql) |
 
 ### 🧠 Concepts Learned
 
