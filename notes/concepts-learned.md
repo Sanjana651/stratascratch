@@ -87,3 +87,8 @@
 - EXTRACT(part FROM date_column) pulls a specific component (MONTH, YEAR, DAY, etc.) out of a full date value, ignoring the rest.
 - Useful for "regardless of year, which month/day did this happen in" type conditions - compares the extracted number, not the whole date.
 - Reinforced AND (combining conditions) and COUNT(*) with no GROUP BY (single combined total across all matching rows).
+
+## Day 18 — LIKE pattern matching and LENGTH()
+- LIKE matches text against a pattern using % as a wildcard for "any sequence of characters, including none." '%h' = ends with h, 'h%' = starts with h, '%h%' = contains h anywhere.
+- LENGTH(column) returns the character count of a text value - often combined with LIKE when a problem cares about both pattern and exact size (e.g. "6 letters, ending in h").
+- First time doing partial/pattern text matching, as opposed to exact equality (= 'value') used in all prior text filters.
