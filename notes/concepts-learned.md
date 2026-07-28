@@ -92,3 +92,10 @@
 - LIKE matches text against a pattern using % as a wildcard for "any sequence of characters, including none." '%h' = ends with h, 'h%' = starts with h, '%h%' = contains h anywhere.
 - LENGTH(column) returns the character count of a text value - often combined with LIKE when a problem cares about both pattern and exact size (e.g. "6 letters, ending in h").
 - First time doing partial/pattern text matching, as opposed to exact equality (= 'value') used in all prior text filters.
+
+## Day 19 — LIKE wildcard placement (starts with vs contains vs ends with)
+- Reinforces Day 18. The placement of % fully determines the pattern's meaning:
+    'text%'  -> starts with 'text'
+    '%text'  -> ends with 'text'
+    '%text%' -> contains 'text' anywhere
+- Recognizing which shape a problem needs, based on wording like "starts with"/"ends with"/"contains", is the core skill - the LIKE syntax itself doesn't change.
