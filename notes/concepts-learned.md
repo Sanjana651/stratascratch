@@ -103,3 +103,8 @@
 ## Day 20 — Combining multiple concepts, keeping clauses straight
 - No new individual concept - combined EXTRACT(), IS NOT NULL, WHERE+AND, GROUP BY, and ORDER BY from prior days into one query.
 - Main challenge: keeping each piece in its correct clause. A SELECT expression (EXTRACT(...) AS alias), a WHERE condition, and a GROUP BY target are different jobs - easy to blur together in a query with many moving parts. Working through clause order (SELECT -> FROM -> WHERE -> GROUP BY -> ORDER BY) one at a time resolves this.
+
+## Day 21 — Careful column selection in wide tables
+- No new SQL syntax - the lesson was reading a wide table's schema carefully before picking a column to filter on.
+- Similarly-named/ambiguous columns (owner_name vs pe_description vs program_element_pe) don't cause SQL errors if the wrong one is picked - the query runs fine but silently answers a different question than intended (same class of bug as Day 9's case-sensitivity issue).
+- Habit: reason about what each column plausibly represents (e.g. "pe" likely = program element, paired with a numeric code column right next to it) before trusting a column name at face value.
