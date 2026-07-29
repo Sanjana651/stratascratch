@@ -99,3 +99,7 @@
     '%text'  -> ends with 'text'
     '%text%' -> contains 'text' anywhere
 - Recognizing which shape a problem needs, based on wording like "starts with"/"ends with"/"contains", is the core skill - the LIKE syntax itself doesn't change.
+
+## Day 20 — Combining multiple concepts, keeping clauses straight
+- No new individual concept - combined EXTRACT(), IS NOT NULL, WHERE+AND, GROUP BY, and ORDER BY from prior days into one query.
+- Main challenge: keeping each piece in its correct clause. A SELECT expression (EXTRACT(...) AS alias), a WHERE condition, and a GROUP BY target are different jobs - easy to blur together in a query with many moving parts. Working through clause order (SELECT -> FROM -> WHERE -> GROUP BY -> ORDER BY) one at a time resolves this.
