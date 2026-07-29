@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-21-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-22-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -50,6 +50,7 @@ notes/       → concepts and patterns learned along the way
 | 9805 | [Find drafts which contains the word 'optimism'](https://platform.stratascratch.com/coding/9805-find-drafts-which-contains-the-word-optimism?code_type=1) | `LIKE`, wildcard placement | [solutions/9805.sql](solutions/9805.sql) |
 | 9728 | [Number of violations](https://platform.stratascratch.com/coding/9728-number-of-violations?code_type=1) | `EXTRACT`, `IS NOT NULL`, `GROUP BY`, `ORDER BY` combined | [solutions/9728.sql](solutions/9728.sql) |
 | 9689 | [Inspection For Glassell Coffee Shop](https://platform.stratascratch.com/coding/9689-inspection-for-glassell-coffee-shop?code_type=1) | Careful column selection in wide tables | [solutions/9689.sql](solutions/9689.sql) |
+| 9688 | [Churro Activity Date](https://platform.stratascratch.com/coding/9688-churro-activity-date?code_type=1) | `WHERE`, `AND`, column selection | [solutions/9688.sql](solutions/9688.sql) |
 
 ### 🧠 Concepts Learned
 
