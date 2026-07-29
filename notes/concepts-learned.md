@@ -108,3 +108,8 @@
 - No new SQL syntax - the lesson was reading a wide table's schema carefully before picking a column to filter on.
 - Similarly-named/ambiguous columns (owner_name vs pe_description vs program_element_pe) don't cause SQL errors if the wrong one is picked - the query runs fine but silently answers a different question than intended (same class of bug as Day 9's case-sensitivity issue).
 - Habit: reason about what each column plausibly represents (e.g. "pe" likely = program element, paired with a numeric code column right next to it) before trusting a column name at face value.
+
+## Day 22 — Applying prior lessons without friction
+- No new SQL concept - reinforced column selection (facility_name vs owner_name from Day 21), WHERE + AND, and boundary conditions (< vs <=) from earlier days.
+- This problem validated Day 21's reasoning: pe_description (today's column) confirmed to be risk category, not owner info - showed that careful column-name reasoning pays off when the same column comes up in different problems with different meanings.
+- Concepts from earlier days becoming automatic, not requiring step-by-step reasoning each time.
