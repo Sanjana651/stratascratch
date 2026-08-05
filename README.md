@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-22-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-23-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH` `LIMIT`
 
 ### ✅ Progress
 
@@ -51,6 +51,7 @@ notes/       → concepts and patterns learned along the way
 | 9728 | [Number of violations](https://platform.stratascratch.com/coding/9728-number-of-violations?code_type=1) | `EXTRACT`, `IS NOT NULL`, `GROUP BY`, `ORDER BY` combined | [solutions/9728.sql](solutions/9728.sql) |
 | 9689 | [Inspection For Glassell Coffee Shop](https://platform.stratascratch.com/coding/9689-inspection-for-glassell-coffee-shop?code_type=1) | Careful column selection in wide tables | [solutions/9689.sql](solutions/9689.sql) |
 | 9688 | [Churro Activity Date](https://platform.stratascratch.com/coding/9688-churro-activity-date?code_type=1) | `WHERE`, `AND`, column selection | [solutions/9688.sql](solutions/9688.sql) |
+| 9663 | [Most Profitable Financial Company](https://platform.stratascratch.com/coding/9663-most-profitable-financial-company?code_type=1) | `LIMIT`, `ORDER BY DESC` | [solutions/9663.sql](solutions/9663.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -76,6 +77,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - HAVING to filter groups by an aggregate value, after GROUP BY (WHERE can't do this - it runs before aggregation exists)
 - EXTRACT(part FROM date) to pull a specific component (month/year/day) from a date column
 - LIKE with % wildcard for pattern matching (starts with / ends with / contains); LENGTH() for character count
+- LIMIT N to keep only the first N rows; commonly paired with ORDER BY DESC to get "top N" results
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
