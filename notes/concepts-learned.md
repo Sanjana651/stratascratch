@@ -113,3 +113,8 @@
 - No new SQL concept - reinforced column selection (facility_name vs owner_name from Day 21), WHERE + AND, and boundary conditions (< vs <=) from earlier days.
 - This problem validated Day 21's reasoning: pe_description (today's column) confirmed to be risk category, not owner info - showed that careful column-name reasoning pays off when the same column comes up in different problems with different meanings.
 - Concepts from earlier days becoming automatic, not requiring step-by-step reasoning each time.
+
+## Day 23 — LIMIT for "top N" queries
+- LIMIT N keeps only the first N rows from a result, after all other clauses (WHERE, GROUP BY, ORDER BY) have already run.
+- Common pattern: ORDER BY metric DESC, then LIMIT 1 to get the single "top" row by that metric.
+- Two valid approaches to "find the maximum": (1) LIMIT 1 after sort (simpler, more readable for top 1), or (2) WHERE = (SELECT MAX(...)) subquery (more general, easier to extend to "top 5" or "top 10").
