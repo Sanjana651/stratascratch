@@ -118,3 +118,10 @@
 - LIMIT N keeps only the first N rows from a result, after all other clauses (WHERE, GROUP BY, ORDER BY) have already run.
 - Common pattern: ORDER BY metric DESC, then LIMIT 1 to get the single "top" row by that metric.
 - Two valid approaches to "find the maximum": (1) LIMIT 1 after sort (simpler, more readable for top 1), or (2) WHERE = (SELECT MAX(...)) subquery (more general, easier to extend to "top 5" or "top 10").
+
+## Day 24 — Reinforcement of GROUP BY + COUNT + ORDER BY pattern
+- No new concepts - reinforced the WHERE -> GROUP BY -> COUNT per group
+  -> ORDER BY pattern from Days 11, 12, 15/16, 20.
+- Highlighted case-sensitivity issue again (Day 9): device = 'macbook pro'
+  vs stored 'MacBookPro' would silently return zero rows if they don't
+  match exactly.
