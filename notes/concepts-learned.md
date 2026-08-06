@@ -120,8 +120,10 @@
 - Two valid approaches to "find the maximum": (1) LIMIT 1 after sort (simpler, more readable for top 1), or (2) WHERE = (SELECT MAX(...)) subquery (more general, easier to extend to "top 5" or "top 10").
 
 ## Day 24 — Reinforcement of GROUP BY + COUNT + ORDER BY pattern
-- No new concepts - reinforced the WHERE -> GROUP BY -> COUNT per group
-  -> ORDER BY pattern from Days 11, 12, 15/16, 20.
-- Highlighted case-sensitivity issue again (Day 9): device = 'macbook pro'
-  vs stored 'MacBookPro' would silently return zero rows if they don't
-  match exactly.
+- No new concepts - reinforced the WHERE -> GROUP BY -> COUNT per group -> ORDER BY pattern from Days 11, 12, 15/16, 20.
+- Highlighted case-sensitivity issue again (Day 9): device = 'macbook pro' vs stored 'MacBookPro' would silently return zero rows if they don't match exactly.
+
+## Day 25 — CASE WHEN for conditional counting, casting for decimal division
+- CASE WHEN condition THEN value END inside an aggregate (COUNT, SUM) lets you calculate conditionally - "count this row if condition holds." Used when a WHERE clause can't express the logic (need different conditions for numerator vs denominator in same query).
+- Integer division trap: COUNT() / COUNT() with both being integers truncates to an integer result (69/223 -> 0, not 0.31). Cast one operand to DECIMAL (::DECIMAL in PostgreSQL) to force decimal division.
+- First time needing to handle ratio/percentage calculations.
