@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-24-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-25-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH` `LIMIT`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH` `LIMIT` `CASE WHEN` `casting`
 
 ### ✅ Progress
 
@@ -53,6 +53,7 @@ notes/       → concepts and patterns learned along the way
 | 9688 | [Churro Activity Date](https://platform.stratascratch.com/coding/9688-churro-activity-date?code_type=1) | `WHERE`, `AND`, column selection | [solutions/9688.sql](solutions/9688.sql) |
 | 9663 | [Most Profitable Financial Company](https://platform.stratascratch.com/coding/9663-most-profitable-financial-company?code_type=1) | `LIMIT`, `ORDER BY DESC` | [solutions/9663.sql](solutions/9663.sql) |
 | 9653 | [MacBookPro User Event Count](https://platform.stratascratch.com/coding/9653-macbookpro-user-event-count?code_type=1) | `WHERE`, `GROUP BY`, `COUNT`, `ORDER BY` | [solutions/9653.sql](solutions/9653.sql) |
+| 2169 | [Contact Information Completeness](https://platform.stratascratch.com/coding/2169-contact-information-completeness?code_type=1) | `CASE WHEN`, casting for decimal division | [solutions/2169.sql](solutions/2169.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -79,6 +80,8 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - EXTRACT(part FROM date) to pull a specific component (month/year/day) from a date column
 - LIKE with % wildcard for pattern matching (starts with / ends with / contains); LENGTH() for character count
 - LIMIT N to keep only the first N rows; commonly paired with ORDER BY DESC to get "top N" results
+- CASE WHEN inside aggregates for conditional counting (when WHERE can't express the logic)
+- Casting to DECIMAL to force decimal (not integer) division for proper ratios
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
