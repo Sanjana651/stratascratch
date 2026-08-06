@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-23-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-24-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -52,6 +52,7 @@ notes/       → concepts and patterns learned along the way
 | 9689 | [Inspection For Glassell Coffee Shop](https://platform.stratascratch.com/coding/9689-inspection-for-glassell-coffee-shop?code_type=1) | Careful column selection in wide tables | [solutions/9689.sql](solutions/9689.sql) |
 | 9688 | [Churro Activity Date](https://platform.stratascratch.com/coding/9688-churro-activity-date?code_type=1) | `WHERE`, `AND`, column selection | [solutions/9688.sql](solutions/9688.sql) |
 | 9663 | [Most Profitable Financial Company](https://platform.stratascratch.com/coding/9663-most-profitable-financial-company?code_type=1) | `LIMIT`, `ORDER BY DESC` | [solutions/9663.sql](solutions/9663.sql) |
+| 9653 | [MacBookPro User Event Count](https://platform.stratascratch.com/coding/9653-macbookpro-user-event-count?code_type=1) | `WHERE`, `GROUP BY`, `COUNT`, `ORDER BY` | [solutions/9653.sql](solutions/9653.sql) |
 
 ### 🧠 Concepts Learned
 
