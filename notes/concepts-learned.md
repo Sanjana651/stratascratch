@@ -127,3 +127,8 @@
 - CASE WHEN condition THEN value END inside an aggregate (COUNT, SUM) lets you calculate conditionally - "count this row if condition holds." Used when a WHERE clause can't express the logic (need different conditions for numerator vs denominator in same query).
 - Integer division trap: COUNT() / COUNT() with both being integers truncates to an integer result (69/223 -> 0, not 0.31). Cast one operand to DECIMAL (::DECIMAL in PostgreSQL) to force decimal division.
 - First time needing to handle ratio/percentage calculations.
+
+## Day 26 — Straightforward IS NULL filtering
+- No new concepts - reinforced IS NULL filtering from Days 7, 17, 25, now as automatic habit rather than something requiring step-by-step reasoning.
+- Simple single-condition WHERE clause, no GROUP BY or ORDER BY needed.
+- Fundamentals becoming second nature.
