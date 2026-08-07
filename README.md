@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-25-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-26-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -54,6 +54,7 @@ notes/       → concepts and patterns learned along the way
 | 9663 | [Most Profitable Financial Company](https://platform.stratascratch.com/coding/9663-most-profitable-financial-company?code_type=1) | `LIMIT`, `ORDER BY DESC` | [solutions/9663.sql](solutions/9663.sql) |
 | 9653 | [MacBookPro User Event Count](https://platform.stratascratch.com/coding/9653-macbookpro-user-event-count?code_type=1) | `WHERE`, `GROUP BY`, `COUNT`, `ORDER BY` | [solutions/9653.sql](solutions/9653.sql) |
 | 2169 | [Contact Information Completeness](https://platform.stratascratch.com/coding/2169-contact-information-completeness?code_type=1) | `CASE WHEN`, casting for decimal division | [solutions/2169.sql](solutions/2169.sql) |
+| 2168 | [Users Missing Phone Numbers](https://platform.stratascratch.com/coding/2168-users-missing-phone-numbers?code_type=1) | `IS NULL` | [solutions/2168.sql](solutions/2168.sql) |
 
 ### 🧠 Concepts Learned
 
