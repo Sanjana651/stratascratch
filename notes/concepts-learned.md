@@ -137,3 +137,8 @@
 - COUNT(DISTINCT column) counts unique/distinct values in a column, distinct from COUNT(*) (rows) or COUNT(column) (non-null values).
 - First active use of DISTINCT inside an aggregate - Day 7 used DISTINCT in SELECT list for deduplication, now using it to filter COUNT's scope.
 - GROUP BY with multiple columns (GROUP BY 1, 2) creates separate buckets for each combination of grouping keys, so aggregates are calculated independently per bucket (e.g. per client-month pair).
+
+## Day 28 — IN syntax and equivalence with OR
+- IN ('value1', 'value2') uses comma-separated list, not OR inside. Common early mistake: IN ('value1' or 'value2') - syntax error.
+- IN and (column = 'value1' OR column = 'value2') are functionally equivalent - IN is often cleaner for multiple literals, especially longer lists.
+- Reinforced: AND for combining conditions, > for "strictly greater than".
