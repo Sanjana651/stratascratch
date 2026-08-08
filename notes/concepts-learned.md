@@ -132,3 +132,8 @@
 - No new concepts - reinforced IS NULL filtering from Days 7, 17, 25, now as automatic habit rather than something requiring step-by-step reasoning.
 - Simple single-condition WHERE clause, no GROUP BY or ORDER BY needed.
 - Fundamentals becoming second nature.
+
+## Day 27 — COUNT(DISTINCT ...) for unique value counts
+- COUNT(DISTINCT column) counts unique/distinct values in a column, distinct from COUNT(*) (rows) or COUNT(column) (non-null values).
+- First active use of DISTINCT inside an aggregate - Day 7 used DISTINCT in SELECT list for deduplication, now using it to filter COUNT's scope.
+- GROUP BY with multiple columns (GROUP BY 1, 2) creates separate buckets for each combination of grouping keys, so aggregates are calculated independently per bucket (e.g. per client-month pair).
