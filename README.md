@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-27-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-28-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -56,6 +56,7 @@ notes/       → concepts and patterns learned along the way
 | 2169 | [Contact Information Completeness](https://platform.stratascratch.com/coding/2169-contact-information-completeness?code_type=1) | `CASE WHEN`, casting for decimal division | [solutions/2169.sql](solutions/2169.sql) |
 | 2168 | [Users Missing Phone Numbers](https://platform.stratascratch.com/coding/2168-users-missing-phone-numbers?code_type=1) | `IS NULL` | [solutions/2168.sql](solutions/2168.sql) |
 | 2024 | [Unique Users Per Client Per Month](https://platform.stratascratch.com/coding/2024-unique-users-per-client-per-month?code_type=1) | `COUNT(DISTINCT ...)`, multi-column `GROUP BY` | [solutions/2024.sql](solutions/2024.sql) |
+| 2167 | [High Earners in Support Departments](https://platform.stratascratch.com/coding/2167-high-earners-in-support-departments?code_type=1) | `IN` syntax, `AND` combining conditions | [solutions/2167.sql](solutions/2167.sql) |
 
 ### 🧠 Concepts Learned
 
