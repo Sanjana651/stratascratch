@@ -3,7 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solved-26-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solved-27-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center"><i>One SQL problem a day, solved in PostgreSQL, with the reasoning behind every query — not just the answer.</i></p>
@@ -23,7 +23,7 @@ notes/       → concepts and patterns learned along the way
 
 ### 🏷️ Topics Covered
 
-`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH` `LIMIT` `CASE WHEN` `casting`
+`subqueries` `IN / EXISTS` `cross-table filtering` `DISTINCT` `DISTINCT ON` `GROUP BY + MAX` `positional grouping` `JOIN` `SUM` `derived tables` `scoped aggregate subqueries` `window functions` `PARTITION BY` `IN with literals` `IS NOT NULL` `AND` `OR` `COUNT` `AVG` `MIN` `operator precedence` `ambiguous column resolution` `HAVING` `EXTRACT` `LIKE` `LENGTH` `LIMIT` `CASE WHEN` `casting` `COUNT(DISTINCT)`
 
 ### ✅ Progress
 
@@ -55,6 +55,7 @@ notes/       → concepts and patterns learned along the way
 | 9653 | [MacBookPro User Event Count](https://platform.stratascratch.com/coding/9653-macbookpro-user-event-count?code_type=1) | `WHERE`, `GROUP BY`, `COUNT`, `ORDER BY` | [solutions/9653.sql](solutions/9653.sql) |
 | 2169 | [Contact Information Completeness](https://platform.stratascratch.com/coding/2169-contact-information-completeness?code_type=1) | `CASE WHEN`, casting for decimal division | [solutions/2169.sql](solutions/2169.sql) |
 | 2168 | [Users Missing Phone Numbers](https://platform.stratascratch.com/coding/2168-users-missing-phone-numbers?code_type=1) | `IS NULL` | [solutions/2168.sql](solutions/2168.sql) |
+| 2024 | [Unique Users Per Client Per Month](https://platform.stratascratch.com/coding/2024-unique-users-per-client-per-month?code_type=1) | `COUNT(DISTINCT ...)`, multi-column `GROUP BY` | [solutions/2024.sql](solutions/2024.sql) |
 
 ### 🧠 Concepts Learned
 
@@ -83,6 +84,7 @@ Full running log in [notes/concepts-learned.md](notes/concepts-learned.md).
 - LIMIT N to keep only the first N rows; commonly paired with ORDER BY DESC to get "top N" results
 - CASE WHEN inside aggregates for conditional counting (when WHERE can't express the logic)
 - Casting to DECIMAL to force decimal (not integer) division for proper ratios
+- COUNT(DISTINCT column) to count unique values, not just rows; GROUP BY with multiple columns for multi-level grouping
 ---
 
 <p align="center"><sub>Consistency beats intensity — one query a day.</sub></p>
