@@ -142,3 +142,8 @@
 - IN ('value1', 'value2') uses comma-separated list, not OR inside. Common early mistake: IN ('value1' or 'value2') - syntax error.
 - IN and (column = 'value1' OR column = 'value2') are functionally equivalent - IN is often cleaner for multiple literals, especially longer lists.
 - Reinforced: AND for combining conditions, > for "strictly greater than".
+
+
+## Day 29 — TO_CHAR() date formatting and COUNT(DISTINCT multi-column)
+- TO_CHAR(date_column, 'format_pattern') formats a date into a specific string pattern. 'YYYY-MM' produces year-month like '2026-08'. Useful beyond EXTRACT (which just pulls individual parts).
+- COUNT(DISTINCT (col1, col2)) counts unique combinations of multiple columns - composite key distinct counting. Different from COUNT(DISTINCT col1) which only looks at one column. Multiple rows with the same pair count as one distinct combination.
